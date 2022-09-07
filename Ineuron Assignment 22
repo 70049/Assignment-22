@@ -1,0 +1,73 @@
+Q1.   Write a recursive python function to calculate sum of first N natural Number.
+Ans.   def sumN(n):
+           if n==1:
+              return 1
+           return n+sumN(n-1)
+       print(sumN(5))
+       
+Q2.   Write a recursive python function to calculate sum of first N odd natural numbers.
+Ans.   def sum_odd(n):
+            if n==1:
+               return 1
+            return 2*n-1+sum_odd(n-1)
+       print(sum_odd(5))
+       
+Q3.   Write a recurcive  function to calculate sum of first n even natural number.
+Ans.   def sum_even(n):
+            if n==1:
+              return 2
+            return 2*n-2+sum_even(n-1)
+        print(sum_even(5))
+        
+Q4.   Write a recursive function to calculate sum of square of first N natural number.
+Ans.   def sum_squ(n):
+            if n==1:
+               return 1
+            return n*n+sum_squ(n-1)
+       print(sum_squ(5))
+       
+Q5.   Write a recurcive python function to calculate sum of cube of first N natural number.
+Ans.   def sum_cube(n):
+            if n==1:
+               return 1
+            return n**3+sum_cube(n-1)
+       print(sum_cube(5))
+       
+Q6.   Write a recursive python function to calculate factorial of a number.
+Ans.   def fact(n):
+           if n==1:
+              return 1
+            return n+fact(n-1)
+       print(fact(10))
+       
+Q7.   Write a recurcive python function to calculate sum of digit of a given number.
+Ans.   def sum_dig(n):
+             if n//10==0:
+                 return n
+             return(n%10+n//10)
+       print(sum_dig(74))      
+       
+Q8.   Write a recurcive python function to print binary of a decimal number.
+Ans.   def P_bin(n):
+            if n==1:
+                return bin(1)
+            return(bin(n))  
+       print(P_bin(5))
+       
+Q9.   Write a recurcive python function to print a octal of a given decimal number.
+Ans.   def P_oct(n):
+            if n==1:
+               return oct(1)
+            return (oct(n))
+       print(P_oct(5))     
+            
+Q10.  Write a recursive python functio to print Nth terms of the fibonacci series.
+Ans.   def N_fib(n):
+           if n==1:
+               return 0
+           if n==2:
+               return 1     
+           return(f(n-1)+f(n-2))
+       print(N_fib(7))   
+       
+       
