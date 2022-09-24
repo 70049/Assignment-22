@@ -44,8 +44,8 @@ Q7.   Write a recurcive python function to calculate sum of digit of a given num
 Ans.   def sum_dig(n):
              if n//10==0:
                  return n
-             return(n%10+n//10)
-       print(sum_dig(74))      
+             return(n%10)+sum_dig(n//10)
+       print(sum_dig(7413))      
        
 Q8.   Write a recurcive python function to print binary of a decimal number.
 Ans.   def P_bin(n):
